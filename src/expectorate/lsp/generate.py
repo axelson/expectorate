@@ -87,8 +87,7 @@ class SpecGenerator:
         if self.lsp_dir is not None:
             spec_md = (
                 self.lsp_dir
-                / "_specifications"
-                / f"""specification-{self.lsp_spec.version.replace('.', '-')}.md"""
+                / "specification.md"
             )
             self.raw_spec = spec_md.read_text()
 
